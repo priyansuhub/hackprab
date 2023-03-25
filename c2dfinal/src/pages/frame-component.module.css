@@ -1,0 +1,120 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.pngwing2Icon {
+  position: relative;
+  width: 520px;
+  height: 600px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.pngwing2Wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 39px 78px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  opacity: 0;
+}
+.pngwing2Wrapper.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-left;
+}
+.frameChild {
+  border: 0;
+  font-family: var(--font-cutive-mono);
+  font-size: var(--font-size-21xl);
+  background-color: transparent;
+  position: relative;
+  width: 480px;
+  height: 90px;
+  flex-shrink: 0;
+}
+.dontHaveAnd {
+  position: relative;
+  text-transform: uppercase;
+}
+.groupParent,
+.submitWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+.groupParent {
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+}
+.submitWrapper {
+  background-color: var(--color-black);
+  flex-direction: row;
+  padding: var(--padding-5xl) var(--padding-24xl);
+  align-items: flex-start;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.frameGroup,
+.frameParent {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.frameGroup {
+  flex-direction: column;
+  padding: 109px 41px;
+  justify-content: flex-start;
+  gap: 46px;
+  opacity: 0;
+}
+.frameGroup.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-right;
+}
+.frameParent {
+  align-self: stretch;
+  flex-direction: row;
+  padding: var(--padding-mid) 28px;
+  justify-content: space-between;
+}
+.login,
+.loginInner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.loginInner {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  padding: var(--padding-mid) var(--padding-smi);
+  align-items: flex-start;
+}
+.login {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-cutive-mono);
+}
+@media screen and (max-width: 960px) {
+  .frameParent {
+    flex-direction: column;
+  }
+}

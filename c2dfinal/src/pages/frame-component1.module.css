@@ -1,0 +1,32 @@
+.groupParent {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  padding: 59px 142px;
+  align-items: center;
+  justify-content: center;
+  gap: 290px;
+}
+.about,
+.aboutInner {
+  display: flex;
+  flex-direction: column;
+}
+.aboutInner {
+  background-color: var(--color-white);
+  overflow: hidden;
+  padding: var(--padding-19xl) var(--padding-12xl);
+  align-items: center;
+  justify-content: center;
+}
+.about {
+  position: relative;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 960px) {
+  .groupParent {
+    flex-direction: column;
+  }
+}

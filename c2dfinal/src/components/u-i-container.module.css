@@ -1,0 +1,44 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.groupChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 398px;
+  height: 398px;
+  object-fit: cover;
+}
+.priyansuRath,
+.uiUxFrontendbackend {
+  position: absolute;
+  top: 461px;
+  left: 76px;
+  text-transform: uppercase;
+}
+.priyansuRath {
+  top: 415px;
+  left: 94px;
+  font-size: var(--font-size-5xl);
+}
+.groupParent {
+  position: relative;
+  width: 398px;
+  height: 480px;
+  flex-shrink: 0;
+  opacity: 0;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-emblema-one);
+}
+.groupParent.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-left;
+}

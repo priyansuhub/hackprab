@@ -1,0 +1,98 @@
+.document {
+  margin: 0;
+}
+.documentGenny,
+.withVisualizations {
+  position: relative;
+  text-transform: uppercase;
+}
+.documentGenny {
+  -webkit-text-stroke: 1px #000;
+}
+.withVisualizations {
+  font-size: 48px;
+}
+.documentGennyParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 21px;
+}
+.start {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  text-transform: uppercase;
+  font-family: var(--font-cutive-mono);
+  color: var(--color-white);
+  text-align: left;
+}
+.startWrapper {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-xs) var(--padding-12xl);
+  background-color: var(--color-black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frameGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 60px;
+}
+.pngwing1Icon {
+  position: relative;
+  width: 471px;
+  height: 659px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.frameParent,
+.pngwing1Wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+.pngwing1Wrapper {
+  padding: var(--padding-4xl) var(--padding-mid);
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameParent {
+  align-self: stretch;
+  padding: 5px 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 88px;
+}
+.homepage,
+.homepageInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.homepageInner {
+  align-self: stretch;
+  background-color: var(--color-white);
+  overflow: hidden;
+  padding: 14px var(--padding-5xl);
+}
+.homepage {
+  position: relative;
+  width: 100%;
+  gap: 1px;
+  text-align: left;
+  font-size: 96px;
+  color: var(--color-black);
+  font-family: var(--font-cutive-mono);
+}
+@media screen and (max-width: 960px) {
+  .frameParent {
+    flex-direction: column;
+  }
+}
